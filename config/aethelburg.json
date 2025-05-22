@@ -1,0 +1,102 @@
+{
+  "spawn_room": "clockwork_square",
+  "rooms": {
+    "clockwork_square": {
+      "id": "clockwork_square",
+      "name": "Clockwork Square",
+      "desc": "The heart of Aethelburg. Gears whir, steam hisses, and automatons patrol the cobbled streets. A massive clock tower dominates the square, its gears exposed and gleaming brass.  Vendor stalls sell everything from clockwork toys to compressed-coal rations.",
+      "exits": {
+        "n": "aetherium_avenue",
+        "s": "cogsmith_district",
+        "e": "gearmaster_guild",
+        "w": "ironworks_lane"
+      }
+    },
+    "aetherium_avenue": {
+      "id": "aetherium_avenue",
+      "name": "Aetherium Avenue",
+      "desc": "A wide, tree-lined avenue where well-to-do citizens stroll beneath elaborate, gas-lit streetlamps. Elegant townhouses with brass-trimmed balconies line the street. The air hums with the faint energy of Aetherium-powered devices.",
+      "exits": {
+        "s": "clockwork_square",
+        "n": "sky_dock_plaza",
+        "w": "inventors_row"
+      }
+    },
+    "inventors_row": {
+      "id": "inventors_row",
+      "name": "Inventors' Row",
+      "desc": "A narrow street crammed with workshops and storefronts displaying the latest inventions.  Clockwork contraptions spin, steam-powered appliances whir, and strange odors fill the air.  Eccentric inventors tinker away, oblivious to the chaos around them.",
+      "exits": {
+        "e": "aetherium_avenue"
+      }
+    },
+    "sky_dock_plaza": {
+      "id": "sky_dock_plaza",
+      "name": "Sky-Dock Plaza",
+      "desc": "A bustling plaza where airships of all shapes and sizes dock.  Gangways extend from the platforms, and porters shout as they load and unload cargo. The air is thick with the smell of coal smoke and exotic spices from far-off lands.",
+      "exits": {
+        "s": "aetherium_avenue"
+      }
+    },
+    "cogsmith_district": {
+      "id": "cogsmith_district",
+      "name": "Cogsmith District",
+      "desc": "The working-class district, filled with workshops and factories where cogsmiths and machinists craft intricate clockwork devices. The clang of hammers and the whir of gears echo through the narrow streets.  A grimy place.",
+      "exits": {
+        "n": "clockwork_square",
+        "s": "scrap_yard",
+        "e": "boiler_alley"
+      }
+    },
+    "scrap_yard": {
+      "id": "scrap_yard",
+      "name": "Scrap Yard",
+      "desc": "A sprawling junkyard piled high with discarded clockwork parts, broken automatons, and rusted machinery.  Scavengers pick through the debris, searching for valuable components. The air is thick with the smell of oil and decay.  Watch your step!",
+      "exits": {
+        "n": "cogsmith_district"
+      }
+    },
+    "boiler_alley": {
+      "id": "boiler_alley",
+      "name": "Boiler Alley",
+      "desc": "A dark and claustrophobic alley filled with roaring boilers and steam pipes.  The air is scalding hot, and the ground vibrates with the force of the machinery.  Cogsmiths tend to the boilers, shoveling coal into the fiery furnaces.",
+      "exits": {
+        "w": "cogsmith_district",
+        "s": "collapsed_tunnel"
+      }
+    },
+    "collapsed_tunnel": {
+      "id": "collapsed_tunnel",
+      "name": "Collapsed Tunnel",
+      "desc": "The ruins of an old tunnel system. The passage appears to have been brought down by a landslide from the city streets above. The passage extends south to a dead end.",
+      "exits": {
+        "n": "boiler_alley"
+      }
+    },
+    "gearmaster_guild": {
+      "id": "gearmaster_guild",
+      "name": "Gearmaster Guild Hall",
+      "desc": "The imposing headquarters of the Gearmaster Guild, a powerful organization that controls the city's clockwork technology.  Elaborate clockwork statues adorn the entrance, and the air hums with the energy of Aetherium-powered devices. Access granted by invitation or membership only.",
+      "exits": {
+        "w": "clockwork_square"
+      }
+    },
+    "ironworks_lane": {
+      "id": "ironworks_lane",
+      "name": "Ironworks Lane",
+      "desc": "A grimy street filled with iron foundries and metalworking shops. The clang of hammers and the roar of furnaces fill the air.  Burly workers forge metal into intricate clockwork components. Hot! Danger!",
+      "exits": {
+        "e": "clockwork_square",
+        "w": "suburban_outskirts"
+      }
+    },
+    "suburban_outskirts": {
+      "id": "suburban_outskirts",
+      "name": "Suburban Outskirts",
+      "desc": "A winding muddy road leading to the outer edge of the city, Aethelburg. To the north, lies farmland and scattered village. To the south, the city reaches into the distance.",
+      "exits": {
+        "e": "ironworks_lane"
+      }
+    }
+  }
+}
