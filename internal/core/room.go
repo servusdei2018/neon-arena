@@ -75,7 +75,7 @@ func (r *Room) HasPlayer(player *Player) bool {
 // GetPlayers retrieves a list of players in a room.
 func (r *Room) GetPlayers() []string {
 	ids := make([]string, 0)
-	for id, _ := range r.here {
+	for id := range r.here {
 		ids = append(ids, string(id))
 	}
 	return ids

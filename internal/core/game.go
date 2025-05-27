@@ -85,6 +85,7 @@ func (g *Game) ListenAndServe() {
 
 // registerDefaultCommands registers basic movement and utility commands.
 func (g *Game) registerDefaultCommands() {
+	g.commandManager.RegisterCommand("chat", g.CmdChat)
 	g.commandManager.RegisterCommandAlias("look", "l", g.CmdLook)
 	g.commandManager.RegisterCommand("quit", g.CmdQuit)
 	g.commandManager.RegisterCommand("say", g.CmdSay)

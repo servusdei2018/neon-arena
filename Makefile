@@ -10,4 +10,10 @@ clean:
 format:
 	$(GO) fmt ./...
 
+lint:
+	$(GO) vet ./...
+
+test:
+	$(GO) test -v ./...
+
 .PHONY: build clean format
