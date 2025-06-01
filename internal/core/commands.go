@@ -67,7 +67,8 @@ func (g *Game) ExecuteCommand(player *Player, command string) {
 			g.Server.Send(player.ID.String(), "Invalid command.\n")
 			return
 		}
-		cmd := parts[0]
+
+		cmd := strings.ToLower(parts[0])
 		args := parts[1:]
 		if handler, ok := g.commandManager.handlers[cmd]; ok {
 			handler(player, cmd, args)
